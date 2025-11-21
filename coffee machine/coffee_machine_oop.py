@@ -1,10 +1,10 @@
 import time, os, json
 
 class CoffeeMachine:
-    STATE_FILE = "machine_state.json"   # class variable
+    STATE_FILE = "machine_state.json"   # class attribute
 
     def __init__(self):
-        # --- Global Data ---
+        # --- Global Data ---   instance attributes
         self.prices = {"Espresso": 1.50, "Latte": 2.50, "Capuccino": 3.00}
         self.default_resources = {"water": 300, "milk": 200, "coffee": 100, "coin": 0.0}
         self.requirement = {
@@ -14,6 +14,7 @@ class CoffeeMachine:
         }
         self.resources = self.load_state()
 
+   # methods
     # --- Persistence Functions ---
     def load_state(self):
         """Load machine state from JSON file if it exists, else use defaults."""
@@ -153,6 +154,7 @@ class CoffeeMachine:
         print("Welcome to the Python Coffee Machine! ☕")
         print("---------------------------------------")
 
+
         while True:
             action = self.get_choice(
                 ["coffee", "report", "refill", "quit"],
@@ -195,5 +197,4 @@ class CoffeeMachine:
 
 # Run the machine
 machine = CoffeeMachine()
-
 machine.run()
