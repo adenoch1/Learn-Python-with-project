@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.site-header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 40px, 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 15px
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.content-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+    color: #222;
+}
+
+.skill-list {
+    columns: 2;
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 120px;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
