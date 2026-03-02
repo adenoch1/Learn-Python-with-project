@@ -77,13 +77,13 @@ from collections import Counter
 
 # Parsing logic
 
-line = "GET /home 200 31, 10.0.0.1"
-parts = line.split()
+# line = "GET /home 200 31, 10.0.0.1"
+# parts = line.split()
 
-print(parts)
+# print(parts)
 
-method, path, status, latency, ip = parts
+# method, path, status, latency, ip = parts
 
-print(method)
+# print(method)
 
-print(path)
+# print(path)
