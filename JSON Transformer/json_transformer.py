@@ -97,7 +97,7 @@ def transform_users(users: List[User]) -> List[User]:
         active_users,
         key=lambda u: u.last_login,
         reverse=True,
-    )
+    ) 
 
 
 def serialize_users(users: List[User]) -> List[dict]:
